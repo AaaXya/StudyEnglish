@@ -1,0 +1,41 @@
+:root {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: linear-gradient(135deg, #f6ceec 10%, #e65297 100%);
+
+    --vp-home-hero-image-background-image: linear-gradient(135deg, #f6ceec 10%, #e65297 100%);
+    --vp-home-hero-image-filter: blur(150px);
+
+    /* brand按钮 */
+    /* --vp-button-brand-border: #f6ceec;
+    --vp-button-brand-text: #f6ceec;
+    --vp-button-brand-bg: #d939cd;
+
+    --vp-button-brand-hover-border: #f6ceec;
+    --vp-button-brand-hover-text: #fff;
+    --vp-button-brand-hover-bg: #d939cd;
+
+    --vp-button-brand-active-border: #f6ceec; */
+
+    --vp-c-brand: #f88fb2;
+    --vp-c-brand-light: #ff93ac;
+    --vp-c-brand-lighter: #ff73ad;
+    --vp-c-brand-dark: #e67d96;
+    --vp-c-brand-darker: #c85082;
+    --vp-c-brand-dimm-1: rgba(240, 60, 130, 0.5);
+    --vp-c-brand-dimm-2: rgba(240, 60, 130, 0.25);
+    --vp-c-brand-dimm-3: rgba(240, 60, 130, 0.05);
+}
+::selection {
+    color: #fff;
+    background: #ffa4cf;
+}
+.image:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-out;
+}
+.c-t {
+    color: var(--vp-c-brand);
+}
+em {
+    color: var(--vp-c-brand);
+}
