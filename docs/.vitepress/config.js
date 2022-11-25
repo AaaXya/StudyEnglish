@@ -46,7 +46,7 @@ export default {
                 ],
             },
         ],
-        socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }],
+        socialLinks: [{ icon: 'github', link: 'https://github.com/AaaXya/StudyEnglish' }],
         sidebar: [
             {
                 text: '词汇',
