@@ -29,7 +29,10 @@ const outputItems = (list, map) => {
 };
 export default {
     title: 'ENATE',
-    description: 'English Notes.',
+    description: '英语笔记，个人笔记记录',
+    lang: 'zh-CN',
+    // head: [['script', { src: './loading.js', type: 'text/javascript' }]],
+    lastUpdated: true,
     themeConfig: {
         logo: '/flower.svg',
         outlineTitle: '目录',
@@ -38,8 +41,8 @@ export default {
             {
                 text: 'contact',
                 items: [
-                    { text: 'QQ', link: '/item-1' },
-                    { text: 'VX', link: '/item-2' },
+                    { text: '变更日志', link: '/item-1' },
+                    { text: '贡献', link: '/item-2' },
                 ],
             },
         ],

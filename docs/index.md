@@ -6,7 +6,10 @@ title: 主页
 head:
     - - meta
       - name: description
-        content: hello
+        content: 英语笔记，个人笔记记录
+    - - meta
+      - name: keywords
+        content: ENATE
 hero:
     name: English Notes
     text: 英语学习笔记记录

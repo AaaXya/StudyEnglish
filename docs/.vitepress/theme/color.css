@@ -39,3 +39,23 @@
 em {
     color: var(--vp-c-brand);
 }
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(357, 100%, 75%);
+    display: grid;
+    place-items: center;
+    z-index: 6;
+    transition: 0.25s ease;
+}
+.preloader .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    border-block-start-color: transparent;
+    animation: rotate360 1s ease infinite;
+}
