@@ -36,6 +36,7 @@ export default {
     themeConfig: {
         logo: '/flower.svg',
         outlineTitle: '目录',
+        outline: [2, 3],
         nav: [
             { text: 'test', link: '/guide' },
             {

@@ -38,6 +38,7 @@ const members = [
     <b>关于我们</b>
     </template>
     <template #lead>
+    <b> ENATE </b>意为 concatenate（连接），取后五个字符命名<br>
     本站基于<Hf title="https://vitepress.vuejs.org/"> vitepress </Hf>构建。vitepress 是 vue + vite 驱动的 ssg 生成工具。markdown 渲染，内嵌 vue 组件。使用起来体验非常好，集成了很多写法，很好的扩展性，本人已全面拥抱 vite。网页的内容基本上是我们团队成员英语学习过程中的一些笔记。<br>
     以下是我们团队的成员，欢迎<Hf title="/guide/family">加入我们</Hf>一起学习
     </template>
