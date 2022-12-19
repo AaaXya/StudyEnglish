@@ -12,8 +12,8 @@ head:
         content: ENATE
 hero:
     name: English Notes
-    text: 英语学习笔记记录
-    tagline: 基于 vitepress 构建的 WebLog
+    text: 你的英语学习笔记
+    tagline: A bad pen is better than a good memory. Please take notes as you read.
     image:
         src: /files.svg
     actions:

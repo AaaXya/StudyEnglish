@@ -38,12 +38,15 @@ export default {
         outlineTitle: '目录',
         outline: [2, 3],
         nav: [
-            { text: 'test', link: '/guide' },
+            { text: 'test', link: '/guide/' },
             {
                 text: 'contact',
                 items: [
-                    { text: '变更日志', link: '/item-1' },
-                    { text: '贡献', link: '/item-2' },
+                    {
+                        text: '变更日志',
+                        link: 'https://github.com/AaaXya/StudyEnglish/commits/master',
+                    },
+                    { text: '贡献', link: '/guide/' },
                 ],
             },
         ],
