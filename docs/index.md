@@ -13,7 +13,7 @@ head:
 hero:
     name: English Notes
     text: 你的英语学习笔记
-    tagline: A bad pen is better than a good memory. Please take notes as you read.
+    tagline: A ship in harbor is safe, but that is not what ships are built for.
     image:
         src: /files.svg
     actions:

@@ -59,3 +59,6 @@ em {
     border-block-start-color: transparent;
     animation: rotate360 1s ease infinite;
 }
+.read-it-out {
+    cursor: pointer;
+}

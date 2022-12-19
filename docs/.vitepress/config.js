@@ -38,9 +38,9 @@ export default {
         outlineTitle: '目录',
         outline: [2, 3],
         nav: [
-            { text: 'test', link: '/guide/' },
+            // { text: '加入我们', link: '/guide/' },
             {
-                text: 'contact',
+                text: '@0.2.1-alpha',
                 items: [
                     {
                         text: '变更日志',
@@ -70,18 +70,7 @@ export default {
             },
             {
                 text: '作文',
-                items: [
-                    { text: 'null', link: '/menu4/1' },
-                    { text: 'null', link: '/menu4/2' },
-                ],
-            },
-            {
-                text: 'code tests unrelated to en',
-                collapsed: true,
-                items: [
-                    { text: 'null', link: '/menu0/1' },
-                    { text: 'null', link: '/menu0/2' },
-                ],
+                items: [{ text: 'null', link: '/menu4/1' }],
             },
         ].map((x) =>
             Object.assign(x, {

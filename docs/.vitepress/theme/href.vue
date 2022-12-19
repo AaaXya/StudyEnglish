@@ -3,12 +3,10 @@
         <slot></slot>
     </a>
 </template>
-<script>
-export default {
-    props: {
-        title: String,
-    }
-}
+<script setup>
+const props = defineProps({
+    title: String,
+})
 </script>
 <style>
 .module-href {
