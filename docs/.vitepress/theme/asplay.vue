@@ -8,8 +8,7 @@
 const { item } = defineProps({
     item: String,
 })
-const kind = item.split('-')
-const voice = new Audio(`/${kind[0]}/${kind[1]}.mp3`)
+const voice = new Audio(`/${item.replace('-', '/')}.mp3`)
 function asplay() {
     voice.play();
 }
