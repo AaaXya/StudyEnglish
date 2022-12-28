@@ -18,6 +18,7 @@ const sidebarGrammar = {
     3: '主谓一致',
     9: '名词性从句',
     10: '状语从句',
+    11: '非谓语动词',
 };
 const outputItems = (list, map) => {
     return Array.isArray(map)
