@@ -16,18 +16,19 @@ const sidebarGrammar = {
     1: '词性、句子成分、句子结构',
     2: '时态语态',
     3: '主谓一致',
+    4: '倒装',
     9: '名词性从句',
     10: '状语从句',
     11: '非谓语动词',
-};
+}
 const outputItems = (list, map) => {
     return Array.isArray(map)
         ? map.reduce((a, b, i) => a.concat({ text: b, link: `/menu${list}/${i + 1}` }), [])
         : Object.keys(map).reduce(
               (a, b) => a.concat({ text: map[b], link: `/menu${list}/${b}` }),
               []
-          );
-};
+          )
+}
 export default {
     title: 'ENATE',
     description: '英语笔记，个人笔记记录',
@@ -93,4 +94,4 @@ export default {
     markdown: {
         lineNumbers: true,
     },
-};
+}

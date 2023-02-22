@@ -3,10 +3,10 @@
         <slot></slot>
     </a>
 </template>
-<script setup>
-const props = defineProps({
-    title: String,
-})
+<script lang="ts" setup>
+    const props = defineProps<{
+        title: string,
+    }>()
 </script>
 <style>
 .module-href {

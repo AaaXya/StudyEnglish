@@ -4,12 +4,12 @@
     </i>
 </template>
 
-<script setup>
-const { item } = defineProps({
-    item: String,
-})
-const voice = new Audio(`/${item.replace('-', '/')}.mp3`)
-function asplay() {
-    voice.play();
-}
+<script lang="ts" setup>
+    const { item } = defineProps<{
+        item: string,
+    }>()
+    const voice = new Audio(`/${item.replace('-', '/')}.mp3`)
+    function asplay() {
+        voice.play();
+    }
 </script>
