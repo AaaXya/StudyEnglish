@@ -7,21 +7,29 @@ const sidebarGrammar = {
     10: '状语从句',
     11: '非谓语动词',
 }
-const outputItems = (list, map) => {
-    if (Array.isArray(map)) {
-        return new Array(map[0])
-            .fill(0)
-            .reduce(
-                (a, _, i) => a.concat({ text: map[1](i + 1), link: `/menu${list}/${i + 1}` }),
-                []
-            )
-    }
-    let res = []
-    for (const key in map) {
-        res.push({ text: map[key], link: `/menu${list}/${key}` })
-    }
-    return res
+
+const grammar = [
+    '词性、句子成分、句子结构',
+    '时态语态',
+    '主谓一致',
+    '倒装',
+    '',
+    '',
+    '',
+    '',
+    '名词性从句',
+    '状语从句',
+    '非谓语动词',
+]
+const outputItems = (arr, operation) => {
+    arr.map(operation)
 }
+console.log(
+    outputItems(grammar, (x, i) => ({
+        text: x,
+        link: `/menu3/list${i + 1}`,
+    }))
+)
 export default {
     nav: [
         {
@@ -39,15 +47,27 @@ export default {
         {
             text: '词汇',
             collapsed: true,
-            items: outputItems(1, [19, (x) => `Unit ${x}`]),
+            items: Array(19)
+                .fill()
+                .map((_, i) => `Unit ${i + 1}`)
+                .map((x, i) => ({
+                    text: x,
+                    link: `/menu1/${i + 1}`,
+                })),
         },
         {
             text: '语法',
-            items: outputItems(2, sidebarGrammar),
+            items: grammar.map((x, i) => ({
+                text: x,
+                link: `/menu2/${i + 1}`,
+            })),
         },
         {
             text: '练习',
-            items: outputItems(3, sidebarGrammar),
+            items: grammar.map((x, i) => ({
+                text: x,
+                link: `/menu3/${i + 1}`,
+            })),
         },
         {
             text: '作文',
