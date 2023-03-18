@@ -4,7 +4,7 @@
     }>()
     const voice = new Audio(`/${item.replace('-', '/')}.mp3`)
     function asplay() {
-        voice.play();
+        voice.play()
     }
 </script>
 <template>
