@@ -1,7 +1,7 @@
 import MyTheme from 'vitepress/theme'
 import './color.css'
-import Href from './Href.vue'
-import Audioplay from './Asplay.vue'
+import Href from './href.vue'
+import Audioplay from './asplay.vue'
 
 export default {
     ...MyTheme,
