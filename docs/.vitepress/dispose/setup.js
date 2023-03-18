@@ -1,13 +1,3 @@
-const sidebarGrammar = {
-    1: '词性、句子成分、句子结构',
-    2: '时态语态',
-    3: '主谓一致',
-    4: '倒装',
-    9: '名词性从句',
-    10: '状语从句',
-    11: '非谓语动词',
-}
-
 const grammar = [
     '词性、句子成分、句子结构',
     '时态语态',
@@ -21,15 +11,7 @@ const grammar = [
     '状语从句',
     '非谓语动词',
 ]
-const outputItems = (arr, operation) => {
-    arr.map(operation)
-}
-console.log(
-    outputItems(grammar, (x, i) => ({
-        text: x,
-        link: `/menu3/list${i + 1}`,
-    }))
-)
+
 export default {
     nav: [
         {
