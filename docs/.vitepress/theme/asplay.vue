@@ -1,6 +1,6 @@
 <script lang="ts" setup>
     const { item } = defineProps<{
-        item: string,
+        item: string
     }>()
     const voice = new Audio(`/${item.replace('-', '/')}.mp3`)
     function asplay() {
