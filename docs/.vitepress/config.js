@@ -1,4 +1,4 @@
-import ambientConfig from './dispose/setup.js'
+import * as ambientConfig from './setup.js'
 export default {
     title: 'ENATE',
     description: '英语笔记，个人笔记记录',
