@@ -11,26 +11,13 @@ const grammar = [
     '状语从句',
     '非谓语动词',
 ]
-// Array.prototype.to = function (...f) {
-//     return this.map((...x) => {
-//         let fn = 0
-//         while (f.length > fn) {
-//             x[0] = f[fn++](...x)
-//         }
-//         return x[0]
-//     })
-// }
-// console.log(
-//     Array(19)
-//         .fill()
-//         .to(
-//             (_, i) => `Unit ${i + 1}`,
-//             (x, i) => ({
-//                 text: x,
-//                 link: `/menu1/${i + 1}`,
-//             })
-//         )
-// )
+
+const compose = (...fns) =>
+    fns.reduce(
+        (f, g) =>
+            (...args) =>
+                f(g(...args))
+    )
 
 export const sidebar = [
     {
@@ -38,11 +25,13 @@ export const sidebar = [
         collapsed: true,
         items: Array(19)
             .fill()
-            .map((_, i) => `Unit ${i + 1}`)
-            .map((x, i) => ({
-                text: x,
-                link: `/menu1/${i + 1}`,
-            })),
+            .map(
+                compose((_, i) => `Unit ${i + 1}`),
+                (x, i) => ({
+                    text: x,
+                    link: `/menu1/${i + 1}`,
+                })
+            ),
     },
     {
         text: '语法',
