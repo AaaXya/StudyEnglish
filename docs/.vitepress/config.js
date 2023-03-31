@@ -1,7 +1,8 @@
 import * as ambientConfig from './setup.js'
+
 export default {
-    title: 'ENATE',
-    description: '英语笔记，个人笔记记录',
+    title: 'Alice',
+    description: '个人笔记记录',
     lang: 'zh-CN',
     // head: [['script', { src: './loading.js', type: 'text/javascript' }]],
     lastUpdated: true,
