@@ -46,7 +46,10 @@ export const sidebar = [
     },
     {
         text: '作文',
-        items: [{ text: 'null', link: '/menu4/1' }],
+        items: [1, 2, 3, 4].map((x, i) => ({
+            text: x,
+            link: `/menu4/${i + 1}`,
+        })),
     },
 ].map((x) =>
     Object.assign(x, {
